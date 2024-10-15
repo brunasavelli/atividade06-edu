@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-background: rgb(255, 255, 255);
+    --cor-header: rgb(255, 132, 50);
+    --cor-section3: rgb(234, 255, 41);
+    --cor-section4: rgb(44, 153, 255);
+    --cor-footer: rgb(218, 218, 218);
+}
+
+/* ESTILO HEADER */
+header{
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.section{
+    width: 55rem;
+    height: 8rem;
+    background-color: var(--cor-header);
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+    }
+    .section{
+        width: 34rem;
+        height: 6rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        gap: 1rem;
+    }
+    .section{
+        width: 19rem;
+        height: 6rem;
+    }
+}
+
+/* ESTILO MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.section3{
+    width: 111rem;
+    height: 25rem;
+    background-color: var(--cor-section3);
+}
+
+.section4{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    gap: 1.4rem;
+}
+
+.article{
+    width: 36rem;
+    height: 15rem;
+    background-color: var(--cor-section4);
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .section3{
+        width: 34rem;
+        height: 24rem;
+    }
+    .section4{
+        flex-direction: column;
+        align-items: center;
+    }
+    .article{
+        width: 34rem;
+        height: 8rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    .section3{
+        width: 19rem;
+    }
+    .section4{
+        flex-direction: column;
+        align-items: center;
+    }
+    .article{
+        width: 19rem;
+        height: 10rem;
+    }
+}
+
+/* ESTILO FOOTER */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+    gap: 1.5rem;
+}
+
+.section5{
+    width: 26.5rem;
+    height: 10rem;
+    background-color: var(--cor-footer);
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    footer{
+        flex-wrap: wrap;
+    }
+    .section5{
+        width: 16.3rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section5{
+        width: 19rem;
+        height: 5rem;
+    }
+}
